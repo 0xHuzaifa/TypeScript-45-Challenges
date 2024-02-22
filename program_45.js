@@ -12,29 +12,6 @@ function storeCarInfo(manufacturer, model, ...args) {
         manufacturer: manufacturer,
         model: model
     };
-    // for (const arg of args) {
-    //     if (args.length === 0) {
-    //         console.log(`${manufacturer}, ${model}`);   
-    //     } 
-    //     else if (args.length === 1) {
-    //         if (typeof arg === 'string') {
-    //             car.color = arg;
-    //             console.log(`${manufacturer}, ${model}, ${car.color}`);
-    //         } else if (typeof arg === 'number') {
-    //             car.year = arg;
-    //             console.log(`${manufacturer}, ${model}, ${car.year}`);
-    //         }
-    //     }
-    //     else if (args.length === 2) {
-    //         if (typeof arg === 'string') {
-    //             car.color = arg;
-    //         } 
-    //         if (typeof arg === 'number') {
-    //             car.year = arg;
-    //         }
-    //         console.log(`${manufacturer}, ${model}, ${car.color}, ${car.year}`);
-    //     } 
-    // }
     for (const arg of args) {
         if (typeof arg === 'string') {
             car.color = arg;
